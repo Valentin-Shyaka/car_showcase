@@ -3,7 +3,8 @@ import Link from 'next/link'
 import CustomButton from './CustomButton'
 import Image from 'next/image'
 
-import CustomButton from './CustomButton'
+
+
 
 const NavBar = () => {
   return (
@@ -19,6 +20,9 @@ const NavBar = () => {
                 />
             </Link>
             <CustomButton
+                  title="sign In"
+                  btnType="button"
+                  containerStyles='text-primary-blue rounded-full bg-white min-w-[130px]'
 
             />
         </nav>
