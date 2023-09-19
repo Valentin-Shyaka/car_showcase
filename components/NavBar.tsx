@@ -1,32 +1,37 @@
 import React from 'react'
-import Link from 'next/link'
 import CustomButton from './CustomButton'
-import Image from 'next/image'
-
-
-
 
 const NavBar = () => {
+    const links=[
+        {
+            name:'Home'
+        },
+        {
+            name:'About us'
+        },
+        {
+            name:'Testimonial'
+        },
+        {
+            name:'Contact'
+        },
+    ]
   return (
-    <header className='w-full absolute z-10'>
-        <nav className='max-w-[1440px] mx-auto flex justify-between items-center sm:px-16 px-6 py-4'>
-            <Link href={'/'} className='flex justify-center items-center'>
-                <Image
-                    src={'/logo.svg'}
-                    alt='car Hub Logo'
-                    width={118}
-                    height={18}
-                    className="object-contain"
-                />
-            </Link>
-            <CustomButton
-                  title="sign In"
-                  btnType="button"
-                  containerStyles='text-primary-blue rounded-full bg-white min-w-[130px]'
+    <div className='flex z-10 absolute top-0 w-full p-4 items-center '>
+        <h3 className='text-[#FF7A1A] font-extrabold text-4xl '>FoodHUB</h3>
+        <div className='flex font-bold gap-4 ml-20'>
+        {links.map(link=>(
+            <p>{link.name}</p>
+        ))
 
-            />
-        </nav>
-    </header>
+        }
+        </div>
+        <div className='flex float-right gap-4 ml-[50%] md:hidden lg:flex'>
+            <CustomButton active={false} text={'Log In'}/>
+            <CustomButton active text={'Start free trial'}/>
+        </div>
+
+    </div>
   )
 }
 
