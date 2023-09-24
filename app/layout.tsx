@@ -6,8 +6,8 @@ import Footer from '@/components/Footer'
 
 
 export const metadata = {
-  title: 'Food HUB',
-  description: 'Food management purposes',
+  title: 'eTware',
+  description: 'car-rental services',
 }
 
 export default function RootLayout({
