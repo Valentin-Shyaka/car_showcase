@@ -73,7 +73,7 @@ export default function Home() {
       <h3 className='text-4xl font-bold mt-4 underline  decoration-[#FF7A1A] underline-offset-8 decoration-8 mb-16'>Frequently Asked questions</h3>
       <div className='flex flex-wrap gap-8'>
         { faqs.map(faq=>(
-          <Question qtitle={faq.title} qtext={faq.text} active={faqActive} />
+          <Question qtitle={faq.title} qtext={faq.text}/>
           ))}
       </div>
       </section>
