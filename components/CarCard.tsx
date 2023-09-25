@@ -1,7 +1,13 @@
+'use client'
 import React from 'react'
 import Image from 'next/image'
 
-const CarCard = ({link,name}) => {
+interface Props{
+    link: string;
+    name:string;
+}
+
+const CarCard = ({link,name}: Props) => {
   return (
     <div className='bg-[#f2f4f8] h-80 w-60 rounded-xl text-center shadow-md'>
         <img

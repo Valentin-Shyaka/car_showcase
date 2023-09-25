@@ -49,17 +49,17 @@ export default function Home() {
           
         </div>
       </section>
-      <section className='w-full h-fit p-20 text-center bg-[#f2f4f8] flex gap-6'>
+      <section className='w-full h-fit p-20 text-center bg-[#f2f4f8] flex gap-6 items-center'>
             <div className=' flex-col w-full text-left items-center'>
               <h3 className='font-extrabold text-4xl'>eTware is Carbon Neutral Certified</h3>
               <p className='font-semibold text-slate-500 text-semibold text-xl mt-4'>Drive and share cars knowing your carbon footprint is balanced out by greenhouse-gas-reduction projects. Carbon-neutral travel on Turo is now verified with a carbon neutral certification!
               </p>
               <button className='text-white bg-[#FF7A1A] font-bold p-4 mt-8'>Explore sustainability on eTware</button>
             </div>
-            <div className='w-full h-[40vh] rounded-2xl'>
+            <div className='w-full h-[50vh] rounded-2xl'>
               <img src="https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
                alt=""
-               className=' object-cover rounded-2xl'
+               className='object-cover  rounded-2xl'
                 />
             </div>
 
