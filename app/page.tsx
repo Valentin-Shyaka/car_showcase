@@ -1,10 +1,15 @@
-
+"use client"
 import CarCard from '@/components/CarCard'
+import Question from '@/components/Question'
 import { cars } from '@/constants'
 import Image from 'next/image'
+import {faqs} from '@/constants'
+import { useState } from 'react'
+
 
 
 export default function Home() {
+  const [faqActive,setFaqActive]=useState(false)
   
   return (
     <main className="overflow-hidden scroll-smooth ">
@@ -41,7 +46,7 @@ export default function Home() {
         <p className='text-2xl font-semibold text-slate-600 mt-4 underline decoration-[#FF7A1A] underline-offset-8 decoration-8'>Explore the world's upcoming car sharing marketplace</p>
         <div className='mt-8 text-left p-16'>
           <h3 className='font-extrabold text-2xl'>Browse by make</h3>
-          <div className='flex justify-between  w-full mt-4 '>
+          <div className='flex justify-between w-full mt-4 '>
           {cars.map(car=>(
             <CarCard link={car.imgUrl} name={car.carName} />
           ))}
@@ -64,8 +69,13 @@ export default function Home() {
             </div>
 
       </section>
-      <section className='w-full p-20 h-fit flex gap-8'>
-
+      <section className='w-full p-20 h-fit gap-8 text-center '>
+      <h3 className='text-4xl font-bold mt-4 underline  decoration-[#FF7A1A] underline-offset-8 decoration-8 mb-8'>Frequently Asked questions</h3>
+      <div className='flex flex-wrap gap-16'>
+        { faqs.map(faq=>(
+          <Question qtitle={faq.title} qtext={faq.text} active={faqActive} />
+          ))}
+      </div>
       </section>
      
     </main>
