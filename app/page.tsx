@@ -10,7 +10,7 @@ export default function Home() {
     <main className="overflow-hidden scroll-smooth ">
       <div className=' h-[70vh] w-screen bg-[#f2f4f8] relative'>
         <img
-           src={'https://images.unsplash.com/photo-1646029642262-022158ff5794?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80'}
+           src={'https://images.unsplash.com/photo-1544218159-ee555140c5b0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80'}
            alt='home image'
            className='w-full h-[70vh]'
         />
@@ -41,7 +41,7 @@ export default function Home() {
         <p className='text-2xl font-semibold text-slate-600 mt-4 underline decoration-[#FF7A1A] underline-offset-8 decoration-8'>Explore the world's upcoming car sharing marketplace</p>
         <div className='mt-8 text-left p-16'>
           <h3 className='font-extrabold text-2xl'>Browse by make</h3>
-          <div className='flex gap-10  w-full mt-4 '>
+          <div className='flex justify-between  w-full mt-4 '>
           {cars.map(car=>(
             <CarCard link={car.imgUrl} name={car.carName} />
           ))}
@@ -56,10 +56,10 @@ export default function Home() {
               </p>
               <button className='text-white bg-[#FF7A1A] font-bold p-4 mt-8'>Explore sustainability on eTware</button>
             </div>
-            <div className='w-full h-[50vh] rounded-2xl'>
+            <div className='w-full h-[30vh] rounded-2xl'>
               <img src="https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
                alt=""
-               className='object-cover  rounded-2xl'
+               className='object-cover h-full w-full rounded-2xl'
                 />
             </div>
 
