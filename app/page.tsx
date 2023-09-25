@@ -19,7 +19,7 @@ export default function Home() {
            alt='home image'
            className='w-full h-[70vh] object-cover'
         />
-        <div className='absolute flex top-0 left-0 w-full h-[70vh] bg-[#fdfdfd62] p-36 justify-center'>
+        <div className='absolute flex top-0 left-0 w-full h-[70vh] bg-[#fdfdfd00] p-36 justify-center'>
             
             <div className='w-[90%] h-20 bg-white rounded-xl relative top-30  justify-center items-center flex p-4'>
                   <div className='w-full block border-r border-slate-400 h-full flex flex-col ml-2 '>
@@ -70,8 +70,8 @@ export default function Home() {
 
       </section>
       <section className='w-full p-20 h-fit gap-8 text-center '>
-      <h3 className='text-4xl font-bold mt-4 underline  decoration-[#FF7A1A] underline-offset-8 decoration-8 mb-8'>Frequently Asked questions</h3>
-      <div className='flex flex-wrap gap-16'>
+      <h3 className='text-4xl font-bold mt-4 underline  decoration-[#FF7A1A] underline-offset-8 decoration-8 mb-16'>Frequently Asked questions</h3>
+      <div className='flex flex-wrap gap-8'>
         { faqs.map(faq=>(
           <Question qtitle={faq.title} qtext={faq.text} active={faqActive} />
           ))}
