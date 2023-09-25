@@ -49,6 +49,7 @@ export const cars=[
     carName:"Mercedes"
   }
 ]
+const homeImageUrl="https://images.unsplash.com/photo-1646029642262-022158ff5794?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
 
 
 

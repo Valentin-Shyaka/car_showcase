@@ -13,7 +13,7 @@ const CarCard = ({link,name}: Props) => {
         <img
          src={link}
          alt='car image'
-         className='w-full rounded-t-xl h-60'
+         className='w-full rounded-t-xl h-60 object-cover'
         
         />
         <p className='mt-4 font-bold'>{name}</p>
