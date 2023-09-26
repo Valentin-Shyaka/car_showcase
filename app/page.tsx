@@ -22,18 +22,18 @@ export default function Home() {
         <div className='absolute flex top-0 left-0 w-full h-[70vh] bg-[#fdfdfd00] p-36 justify-center'>
             
             <div className='w-[90%] h-20 bg-white rounded-xl relative top-30  justify-center items-center flex p-4'>
-                  <div className='w-full block border-r border-slate-400 h-full flex flex-col ml-2 '>
+                  <div className='w-full block border-r border-slate-400 h-full flex flex-col ml-2 mr-2 '>
                     <label className='font-bold'>Location</label>
-                    <input type="text" name="location" id="" placeholder='City, airport, address or hotel' className='outline-none'/>
+                    <input type="text" name="location" id="" placeholder='City, airport, address or hotel' className='outline-none w-[90%]'/>
                   </div>
-                  <div className='w-full block border-r border-slate-400 h-full flex flex-col ml-2'>
+                  <div className='w-full block border-r border-slate-400 h-full flex flex-col ml-4 mr-2 '>
                     <label htmlFor=""  className='font-bold'>From</label>
-                    <input type="date" name="date" id=""  placeholder='date/time'  className='outline-none'/>
+                    <input type="date" name="date" id=""  placeholder='date/time'  className='outline-none w-[90%]'/>
 
                   </div>
-                  <div className='w-full block  h-full flex flex-col ml-2'>
+                  <div className='w-full block  h-full flex flex-col ml-4 mr-2 '>
                     <label htmlFor="" className='font-bold'>until</label>
-                    <input type="date" name="date" id=""  placeholder='date/time'  className='outline-none'/>
+                    <input type="date" name="date" id=""  placeholder='date/time'  className='outline-none w-[90%]'/>
 
                   </div>
 
