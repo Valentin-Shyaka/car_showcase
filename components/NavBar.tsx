@@ -1,7 +1,11 @@
+"use client"
 import React from 'react'
 import CustomButton from './CustomButton'
+import Login from './Login'
+import { useState } from 'react'
 
 const NavBar = () => {
+    const [isOpen, setIsOpen] = useState(false);
     const links=[
         {
             name:'Home'
@@ -27,9 +31,11 @@ const NavBar = () => {
         }
         </div>
         <div className='flex float-right gap-4 ml-[45%] '>
-            <CustomButton active={false} text={'Log In'}/>
+            <CustomButton active={false} text={'Log In'} handleClick={() => setIsOpen(true)}/>
             <CustomButton active text={'Become a host'}/>
         </div>
+
+        <Login isOpen={isOpen} closeModal={() => setIsOpen(false)}/>
 
     </div>
   )
