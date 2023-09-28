@@ -74,5 +74,36 @@ export const faqs=[
   }
 ]
 
+export const availableCars=[
+  {
+    image:'https://images.unsplash.com/photo-1646029642262-022158ff5794?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80',
+    name:'Toyota bZ4X 2023',
+    venue:'Nyamirambo',
+    dist:9.8,
+    dollars:80,
+  },
+  {
+    image:'https://images.unsplash.com/photo-1646029642262-022158ff5794?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80',
+    name:'Toyota bZ4X 2023',
+    venue:'Nyamirambo',
+    dist:9.8,
+    dollars:80,
+  },
+  {
+    image:'https://images.unsplash.com/photo-1646029642262-022158ff5794?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80',
+    name:'Toyota bZ4X 2023',
+    venue:'Nyamirambo',
+    dist:9.8,
+    dollars:80,
+  },
+  {
+    image:'https://images.unsplash.com/photo-1646029642262-022158ff5794?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80',
+    name:'Toyota bZ4X 2023',
+    venue:'Nyamirambo',
+    dist:9.8,
+    dollars:80,
+  },
+]
+
 
 
