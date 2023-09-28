@@ -3,21 +3,26 @@ import React from 'react'
 import CustomButton from './CustomButton'
 import Login from './Login'
 import { useState } from 'react'
+import Link from 'next/link'
 
 const NavBar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const links=[
         {
-            name:'Home'
+            name:'Home',
+            href:'/home'
         },
         {
-            name:'About us'
+            name:'About us',
+            href:'/about'
         },
         {
-            name:'Testimonial'
+            name:'Testimonial',
+            href:'/testimonial'
         },
         {
-            name:'Contact'
+            name:'Contact',
+            href:'/contact'
         },
     ]
   return (
@@ -25,7 +30,9 @@ const NavBar = () => {
         <h3 className='text-[#FF7A1A] font-extrabold text-4xl '>eTware</h3>
         <div className='flex font-bold gap-4 ml-20 max-sm:hidden '>
         {links.map(link=>(
+            <Link href={`${link.href}`}>
             <p>{link.name}</p>
+            </Link>
         ))
 
         }
