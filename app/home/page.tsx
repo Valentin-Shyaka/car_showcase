@@ -3,6 +3,7 @@ import CarDetailsCard from '@/components/CarDetailsCard'
 import CustomButton from '@/components/CustomButton'
 import React from 'react'
 import { availableCars } from '@/constants'
+import MyMap from '@/components/Map'
 const LandingPage = () => {
   const filters=[
     {
@@ -31,8 +32,8 @@ const LandingPage = () => {
               <CarDetailsCard imageurl={availablecar.image} carName={availablecar.name} location={availablecar.venue} miles={availablecar.dist} price={availablecar.dollars} />
             ))}
           </div>
-          <div className='w-full'>
-              
+          <div className='w-full h-55 rounded-xl border bg-white'>
+              <MyMap/>
           </div>
           
         </div>
