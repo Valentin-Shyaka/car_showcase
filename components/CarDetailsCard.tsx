@@ -17,7 +17,7 @@ interface CarDetailsProps{
 
 const CarDetailsCard = ({imageurl,carName,location,miles,price}:CarDetailsProps) => {
   return (
-    <div className='h-30  rounded-xl border bg-white flex mb-4'>
+    <div className='h-36  rounded-xl border bg-white flex mb-4'>
         <div className='w-[30%]'>
             <img 
                 src={imageurl}
