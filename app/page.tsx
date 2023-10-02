@@ -5,7 +5,7 @@ import { cars } from '@/constants'
 import Image from 'next/image'
 import {faqs} from '@/constants'
 import { useState } from 'react'
-
+import {AiOutlineSearch} from 'react-icons/ai'
 
 
 export default function Home() {
@@ -35,6 +35,9 @@ export default function Home() {
                     <label htmlFor="" className='font-bold'>until</label>
                     <input type="date" name="date" id=""  placeholder='date/time'  className='outline-none w-[90%] bg-none'/>
 
+                  </div>
+                  <div className='text-2xl font-bold rounded-full bg-[#f2f4f8] p-4 cursor-pointer'>
+                      <AiOutlineSearch className='text-2xl font-bold'/>
                   </div>
 
 
