@@ -39,7 +39,7 @@ const Login =({isOpen,closeModal}:LoginProps)=>(
             >
               <Dialog.Panel className='relative w-full max-w-lg max-h-[90vh] overflow-y-auto transform rounded-2xl bg-white p-6 text-left shadow-xl transition-all flex flex-col gap-5'>
                 <AiOutlineClose
-                  className='absolute top-4 right-4 z-10 w-fit font-extrabold text-2xl rounded-lg '
+                  className='absolute top-4 right-4 z-10 w-fit font-extrabold text-2xl rounded-lg cursor-pointer '
                   onClick={closeModal}
                 />
 
