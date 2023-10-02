@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 import Image from "next/image";
-
+import {AiOutlineClose} from 'react-icons/ai'
 import { Dialog, Transition } from "@headlessui/react";
 import CustomButton from "./CustomButton";
 
@@ -38,13 +38,10 @@ const Login =({isOpen,closeModal}:LoginProps)=>(
               leaveTo='opacity-0 scale-95'
             >
               <Dialog.Panel className='relative w-full max-w-lg max-h-[90vh] overflow-y-auto transform rounded-2xl bg-white p-6 text-left shadow-xl transition-all flex flex-col gap-5'>
-                <button
-                  type='button'
-                  className='absolute top-2 right-2 z-10 w-fit p-2 bg-[#FF7A1A] text-white font-bold rounded-lg '
+                <AiOutlineClose
+                  className='absolute top-4 right-4 z-10 w-fit font-extrabold text-2xl rounded-lg '
                   onClick={closeModal}
-                >
-                  close
-                </button>
+                />
 
                 <div className='flex-1 flex flex-col gap-3 justify-center'>
                   <h3 className="text-3xl font-extrabold ">Log in</h3>
