@@ -6,7 +6,7 @@ import CustomButton from './CustomButton';
 
 const Contact = () => {
     const form = useRef();
-    const sendEmail = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const sendEmail = (e:any) => {
        
         e.preventDefault();
     
