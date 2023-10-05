@@ -6,7 +6,7 @@ import CustomButton from './CustomButton';
 
 const Contact = () => {
     const form = useRef();
-    const sendEmail = (e:any) => {
+    const sendEmail = (e:MouseEvent<HTMLButtonElement>) => {
        
         e.preventDefault();
     
