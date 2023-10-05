@@ -4,13 +4,14 @@ import React, { MouseEventHandler } from 'react'
   text:string;
   active:boolean;
   handleClick?: MouseEventHandler<HTMLButtonElement>;
+  btnType: "submit" | undefined
 
  }
 
-const CustomButton = ({text,active,handleClick}:Props) => {
+const CustomButton = ({text,btnType,active,handleClick}:Props) => {
     
   return (
-    <button className={active ?'p-4 border bg-[#FF7A1A] rounded-lg font-bold text-white max-sm:p-2':'p-4 border border-[#FF7A1A] rounded-lg font-bold max-sm:p-2'} onClick={handleClick}>
+    <button type={btnType} className={active ?'p-4 border bg-[#FF7A1A] rounded-lg font-bold text-white max-sm:p-2':'p-4 border border-[#FF7A1A] rounded-lg font-bold max-sm:p-2'} onClick={handleClick}>
         
         <p>{text}</p>
     </button>
