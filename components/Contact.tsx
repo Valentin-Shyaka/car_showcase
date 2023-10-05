@@ -5,12 +5,12 @@ import './contact.css'
 import CustomButton from './CustomButton';
 
 const Contact = () => {
-    const form = useRef();
-    const sendEmail = (e:MouseEvent<HTMLButtonElement>) => {
+    const form = useRef<HTMLFormElement | null>(null);
+    const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
        
         e.preventDefault();
     
-        emailjs.sendForm('service_wq2ho1s', 'template_4hzkneq', form.current, 'v75ycDi95WzXVgQnr')
+        emailjs.sendForm('service_wq2ho1s', 'template_4hzkneq', form.current!, 'v75ycDi95WzXVgQnr')
           .then((result) => {
               console.log(result.text);
           }, (error) => {
