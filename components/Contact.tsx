@@ -65,7 +65,7 @@ const Contact = () => {
             </div>
             <div className="contact__content">
                 <h3 className="contact__title">Mail us</h3>
-                <form ref={form} onSubmit={sendEmail} className="contact__form">
+                <form ref={formRef} onSubmit={sendEmail} className="contact__form">
                     <div className="contact__form-div">
                         <label className="contact__form-tag">Name</label>
                         <input type="text"  name="name" className="contact__form-input" placeholder="Name"></input>
