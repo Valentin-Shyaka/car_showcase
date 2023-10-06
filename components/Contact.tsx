@@ -5,19 +5,25 @@ import './contact.css'
 import CustomButton from './CustomButton';
 
 const Contact = () => {
-    const form = useRef<HTMLFormElement | null>(null);
-    const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
-       
-        e.preventDefault();
-    
-        emailjs.sendForm('service_wq2ho1s', 'template_4hzkneq', form.current!, 'v75ycDi95WzXVgQnr')
-          .then((result) => {
-              console.log(result.text);
-          }, (error) => {
-              console.log(error.text);
-          });
-        e.target.reset()
-      };
+    const formRef = useRef<HTMLFormElement | null>(null);
+
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_wq2ho1s', 'template_4hzkneq', formRef.current!, 'v75ycDi95WzXVgQnr')
+      .then((result) => {
+        console.log(result.text);
+      })
+      .catch((error) => {
+        console.log(error.text);
+      });
+
+    // Reset the form after submission
+    if (formRef.current) {
+      formRef.current.reset();
+    }
+  };
   return (
     <section className="contact section " id="contact">
        
