@@ -58,11 +58,11 @@ const Login =({isOpen,closeModal}:LoginProps)=>(
                     <label className="text-sm flex gap-2 text-slate-700">
                         <input type="checkbox" className="accent-[#FF7A1A]" /> Remember me
                     </label>
-                    <CustomButton text="Login" active/>
+                    <CustomButton btnType="submit" text="Login" active/>
                   </div>
                   <span className="text-center text-slate-500">or</span>
                   <div className="flex flex-col gap-2">
-                    <CustomButton text="Continue with Email" active={false}/>
+                    <CustomButton btnType="submit" text="Continue with Email" active={false}/>
                     
                   </div>
                   <p className="text-center mt-2">Don't have an account? <span className="font-semibold cursor-pointer">Signup</span></p>   
