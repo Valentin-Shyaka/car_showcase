@@ -77,7 +77,7 @@ const Contact = () => {
                     </div>
                     <div className="contact__form-div contact__form-area">
                         <label className="contact__form-tag">message</label>
-                        <textarea name="message" cols="30" rows="10" className="contact__form-input" placeholder="How may we help you?"></textarea>
+                        <textarea name="message" cols={30} rows={10} className="contact__form-input" placeholder="How may we help you?"></textarea>
                     </div>
                     <CustomButton btnType={'submit'}  active={false} text='Send message'/>
                     
