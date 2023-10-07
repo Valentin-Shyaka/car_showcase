@@ -38,8 +38,8 @@ const NavBar = () => {
         }
         </div>
         <div className='flex float-right gap-4 ml-[45%] max-sm:ml-[20%]'>
-            <CustomButton active={false} text={'Log In'} handleClick={() => setIsOpen(true)}/>
-            <CustomButton active text={'Become a host'}/>
+            <CustomButton btnType={undefined} active={false} text={'Log In'} handleClick={() => setIsOpen(true)}/>
+            <CustomButton btnType={undefined} active text={'Become a host'}/>
         </div>
 
         <Login isOpen={isOpen} closeModal={() => setIsOpen(false)}/>
