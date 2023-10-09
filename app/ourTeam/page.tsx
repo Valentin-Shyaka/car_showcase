@@ -24,8 +24,6 @@ const TeamPage = () => {
               <TeamMemberCard/>
               <TeamMemberCard/>
               <TeamMemberCard/>
-             
-              
             </div>
             
         </div>
