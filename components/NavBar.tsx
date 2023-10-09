@@ -14,7 +14,7 @@ const NavBar = () => {
         },
         {
             name:'About us',
-            href:'/about'
+            href:'/ourTeam'
         },
         {
             name:'Testimonial',
