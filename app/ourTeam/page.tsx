@@ -17,7 +17,17 @@ const TeamPage = () => {
         </div>
         <div className='p-20'>
             <h3 className='text-4xl font-extrabold font-serif'>Leadership</h3>
-            <TeamMemberCard/>
+            <div className='mt-6 w-full flex flex-wrap justify-between gap-4'>
+              <TeamMemberCard/>
+              <TeamMemberCard/>
+              <TeamMemberCard/>
+              <TeamMemberCard/>
+              <TeamMemberCard/>
+              <TeamMemberCard/>
+             
+              
+            </div>
+            
         </div>
     </div>
   )
