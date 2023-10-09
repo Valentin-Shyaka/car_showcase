@@ -1,10 +1,11 @@
+import CustomButton from '@/components/CustomButton'
 import TeamMemberCard from '@/components/TeamMemberCard'
 import React from 'react'
 
 const TeamPage = () => {
   return (
-    <div className=' bg-[#f2f4f8]'>
-        <div className='relative h-[40vh] w-full'>
+    <div className='items-center bg-[#f2f4f8]'>
+        <div className='relative h-[40vh] w-full '>
             <img
              src="https://images.unsplash.com/photo-1510227320292-0811fae44991?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1931&q=80"
              alt=""
@@ -26,6 +27,28 @@ const TeamPage = () => {
               <TeamMemberCard/>
             </div>
             
+        </div>
+        <div className='p-20'>
+            <h3 className='text-4xl font-extrabold font-serif'>Leadership</h3>
+            <div className='mt-6 w-full flex flex-wrap justify-between gap-4'>
+              <TeamMemberCard/>
+              <TeamMemberCard/>
+              <TeamMemberCard/>
+              <TeamMemberCard/>
+              <TeamMemberCard/>
+              <TeamMemberCard/>
+            </div>
+            
+        </div>
+        <div className='flex w-full justify-center p-4'>
+          <div className='flex w-[40%] align-middle  bg-[#cac9c9] p-20 rounded-md justify-between'>
+              <div className=' text-center'>
+                <h3 className='text-5xl font-extrabold font-serif'>Join the team</h3>
+                <p className='mt-4 font-semibold'>Help put the Rwanda's 1.5 billion cars to better use</p>
+              </div>
+              <CustomButton text='See all positions' active={true} btnType={undefined}/>
+          </div>
+
         </div>
     </div>
   )
