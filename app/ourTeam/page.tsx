@@ -9,8 +9,9 @@ const TeamPage = () => {
              alt=""
              className='w-full h-[40vh] object-cover'
               />
-              <div className='w-full h-[40vh] bg-[#ffffff23] absolute top-0'>
-
+              <div className='p-36 text-center w-full h-[40vh] bg-[#00000045] absolute top-0'>
+                <h3 className='text-6xl text-white font-extrabold'>Meet the team</h3>
+                <p className='mt-4 text-white text-lg font-bold'>Get to know the people behind the wheel of the world's largest car sharing marketplace</p>
               </div>
         </div>
     </div>
