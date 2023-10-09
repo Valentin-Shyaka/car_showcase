@@ -16,7 +16,7 @@ const TeamMemberCard = ({profileUrl,memberName,position}:MemberProps) => {
         
         />
         </div>
-        <p className='mt-4 font-bold'>{memberName}</p>
+        <p className='mt-4 font-bold uppercase'>{memberName}</p>
         <span className='text-slate-500 text-sm font-semibold'>{position}</span>
     </div>
   )
