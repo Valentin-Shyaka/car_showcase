@@ -13,7 +13,7 @@ const NavBar = () => {
             href:'/home'
         },
         {
-            name:'About us',
+            name:'Team',
             href:'/ourTeam'
         },
         {
@@ -28,7 +28,7 @@ const NavBar = () => {
   return (
     <div className='flex z-10  w-full p-4 items-center bg-white '>
         <h3 className='text-[#FF7A1A] font-extrabold text-4xl '>eTware</h3>
-        <div className='flex font-bold gap-4 ml-20 max-sm:hidden '>
+        <div className='flex font-bold gap-6 ml-20 max-sm:hidden '>
         {links.map(link=>(
             <Link href={`${link.href}`}>
             <p>{link.name}</p>
