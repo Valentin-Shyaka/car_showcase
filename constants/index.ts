@@ -148,27 +148,27 @@ export const directors=[
     department:'Chief Executive Officer & Chairperson'
   },
   {
-    directorName:"HOWARD HARTENBAUM",
+    directorName:"kimberly jabal",
     department:'Chief Executive Officer & Chairperson'
   },
   {
-    directorName:"HOWARD HARTENBAUM",
+    directorName:"bonnie jonas",
     department:'Chief Executive Officer & Chairperson'
   },
   {
-    directorName:"HOWARD HARTENBAUM",
+    directorName:"deepak kamra",
     department:'Chief Executive Officer & Chairperson'
   },
   {
-    directorName:"HOWARD HARTENBAUM",
+    directorName:"joey levin",
     department:'Chief Executive Officer & Chairperson'
   },
   {
-    directorName:"HOWARD HARTENBAUM",
+    directorName:"shripriya mahesh",
     department:'Chief Executive Officer & Chairperson'
   },
   {
-    directorName:"HOWARD HARTENBAUM",
+    directorName:"brook porter",
     department:'Chief Executive Officer & Chairperson'
   }
 ]
