@@ -1,6 +1,9 @@
 import CustomButton from '@/components/CustomButton'
 import TeamMemberCard from '@/components/TeamMemberCard'
 import React from 'react'
+import DirectorCard from './DirectorCard'
+import { teamMembers } from '@/constants'
+import { directors } from '@/constants'
 
 const TeamPage = () => {
   return (
@@ -18,30 +21,24 @@ const TeamPage = () => {
         </div>
         <div className='p-20'>
             <h3 className='text-4xl font-extrabold font-serif'>Leadership</h3>
-            <div className='mt-6 w-full flex flex-wrap justify-between gap-4'>
-              <TeamMemberCard/>
-              <TeamMemberCard/>
-              <TeamMemberCard/>
-              <TeamMemberCard/>
-              <TeamMemberCard/>
-              <TeamMemberCard/>
+            <div className='mt-6 w-full flex flex-wrap justify-between gap-6 '>
+              {teamMembers.map(member =>(
+                <TeamMemberCard profileUrl={member.profileUrl} memberName={member.memberName} position={member.position}/>
+              ))}
             </div>
             
         </div>
-        <div className='p-20'>
-            <h3 className='text-4xl font-extrabold font-serif'>Leadership</h3>
-            <div className='mt-6 w-full flex flex-wrap justify-between gap-4'>
-              <TeamMemberCard/>
-              <TeamMemberCard/>
-              <TeamMemberCard/>
-              <TeamMemberCard/>
-              <TeamMemberCard/>
-              <TeamMemberCard/>
+        <div className='p-36'>
+            <h3 className='text-4xl font-extrabold font-serif'>Board of Directors</h3>
+            <div className='mt-6 w-full flex flex-wrap justify-between gap-8 p-10'>
+              {directors.map(director =>(
+                <DirectorCard directorName={director.directorName} department={director.department} />
+              ))}
             </div>
             
         </div>
         <div className='flex w-full justify-center p-4'>
-          <div className='flex w-[40%] align-middle  bg-[#cac9c9] p-20 rounded-md justify-between'>
+          <div className='flex w-[50%] align-middle  bg-[#cac9c9] p-20 rounded-md justify-between'>
               <div className=' text-center'>
                 <h3 className='text-5xl font-extrabold font-serif'>Join the team</h3>
                 <p className='mt-4 font-semibold'>Help put the Rwanda's 1.5 billion cars to better use</p>

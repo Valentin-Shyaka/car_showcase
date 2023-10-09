@@ -104,6 +104,73 @@ export const availableCars=[
     dollars:80,
   },
 ]
+export const teamMembers=[
+  {
+    profileUrl:'https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80',
+    memberName:'Carl Deuker',
+    position:"Chief Executive Officer"
+  },
+  {
+    profileUrl:'https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80',
+    memberName:'Andre Haddad',
+    position:"president"
+  },
+  {
+    profileUrl:'https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80',
+    memberName:'Alex Benn',
+    position:"Chief People Officer"
+  },
+  {
+    profileUrl:'https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80',
+    memberName:'Michelle fang',
+    position:"Chief Legal Officer"
+  },
+  {
+    profileUrl:'https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80',
+    memberName:'Chuck fischer',
+    position:"Chief Financial Officer"
+  } ,
+  {
+    profileUrl:'https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80',
+    memberName:'albert mangahas',
+    position:"Chief Data Officer"
+  },
+  {
+    profileUrl:'https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80',
+    memberName:'andrew mok',
+    position:"Chief Marketing Officer"
+  }
+]
 
+export const directors=[
+  {
+    directorName:"HOWARD HARTENBAUM",
+    department:'Chief Executive Officer & Chairperson'
+  },
+  {
+    directorName:"HOWARD HARTENBAUM",
+    department:'Chief Executive Officer & Chairperson'
+  },
+  {
+    directorName:"HOWARD HARTENBAUM",
+    department:'Chief Executive Officer & Chairperson'
+  },
+  {
+    directorName:"HOWARD HARTENBAUM",
+    department:'Chief Executive Officer & Chairperson'
+  },
+  {
+    directorName:"HOWARD HARTENBAUM",
+    department:'Chief Executive Officer & Chairperson'
+  },
+  {
+    directorName:"HOWARD HARTENBAUM",
+    department:'Chief Executive Officer & Chairperson'
+  },
+  {
+    directorName:"HOWARD HARTENBAUM",
+    department:'Chief Executive Officer & Chairperson'
+  }
+]
 
 
