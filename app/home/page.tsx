@@ -4,7 +4,10 @@ import CustomButton from '@/components/CustomButton'
 import React from 'react'
 import { availableCars } from '@/constants'
 
+
 const LandingPage = () => {
+ 
+  
   const filters=[
     {
       name:'Sort by'
@@ -29,9 +32,10 @@ const LandingPage = () => {
         <div className='mt-10 flex gap-20'>
           <div className='w-full overflow-auto h-[55vh]'>
             {availableCars.map(availablecar =>(
-              <CarDetailsCard imageurl={availablecar.image} carName={availablecar.name} location={availablecar.venue} miles={availablecar.dist} price={availablecar.dollars} />
+              <CarDetailsCard imageurl={availablecar.image} carName={availablecar.name} location={availablecar.venue} miles={availablecar.dist} price={availablecar.dollars}/>
             ))}
           </div>
+         
           <div className='w-full h-55 rounded-xl border bg-white'>
              
           </div>

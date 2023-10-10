@@ -3,12 +3,7 @@ import Image from "next/image";
 import {AiOutlineClose} from 'react-icons/ai'
 import { Dialog, Transition } from "@headlessui/react";
 import CustomButton from "./CustomButton";
-
-
-interface LoginProps {
-  isOpen: boolean;
-  closeModal: () => void;
-}
+import { LoginProps } from "@/types";
 
 const Login =({isOpen,closeModal}:LoginProps)=>(
     <>

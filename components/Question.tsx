@@ -2,17 +2,9 @@
 import React from 'react'
 import { useState } from 'react'
 import {BiSolidChevronDown, BiSolidChevronUp} from 'react-icons/bi'
+import { NavProps } from '@/types'
 
-
-
-interface Props{
-    qtitle: string;
-    qtext: string;
-   
-    
-}
-
-const Question = ({qtitle,qtext}:Props) => {
+const Question = ({qtitle,qtext}:NavProps) => {
     const [faqActive,setFaqActive]=useState(false)
   return (
     <div className='w-[45%] max-sm:w-full h-fit p-2 border-b border-slate-300 cursor-pointer  '>
