@@ -17,8 +17,8 @@ const NavBar = () => {
             href:'/ourTeam'
         },
         {
-            name:'Testimonial',
-            href:'/testimonial'
+            name:'booking',
+            href:'/book'
         },
         {
             name:'Contact',
