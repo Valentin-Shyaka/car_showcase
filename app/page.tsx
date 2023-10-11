@@ -8,6 +8,7 @@ import { useState } from 'react'
 import {AiOutlineSearch} from 'react-icons/ai'
 import { fetchCars } from "@/utils";
 import { HomeProps } from "@/types";
+import CarCardSkeleton from '@/components/CarCardSkeleton'
 
 
 export default async function Home({ searchParams }: HomeProps) {
@@ -66,25 +67,12 @@ export default async function Home({ searchParams }: HomeProps) {
               ))}
           </div>
           ):(
-            <div className='flex flex-wrap gap-6'>
-              <div className='flex flex-wrap gap-4 items-center p-20 justify-between h-60 w-60 rounded-xl shadow-md  mt-4 border bg-slate-300 animate-pulse'>
-                 <p className='font-bold'>Loading...</p>
-              </div>
-              <div className='flex flex-wrap gap-4 items-center p-20 justify-between h-60 w-60 rounded-xl shadow-md  mt-4 border bg-slate-300 animate-pulse'>
-                 <p className='font-bold'>Loading...</p>
-              </div>
-              <div className='flex flex-wrap gap-4 items-center p-20 justify-between h-60 w-60 rounded-xl shadow-md  mt-4 border bg-slate-300 animate-pulse'>
-                 <p className='font-bold'>Loading...</p>
-              </div>
-               <div className='flex flex-wrap gap-4 items-center p-20 justify-between h-60 w-60 rounded-xl shadow-md  mt-4 border bg-slate-300 animate-pulse'>
-                 <p className='font-bold'>Loading...</p>
-              </div>
-               <div className='flex flex-wrap gap-4 items-center p-20 justify-between h-60 w-60 rounded-xl shadow-md  mt-4 border bg-slate-300 animate-pulse'>
-                 <p className='font-bold'>Loading...</p>
-              </div>
-               <div className='flex flex-wrap gap-4 items-center p-20 justify-between h-60 w-60 rounded-xl shadow-md  mt-4 border bg-slate-300 animate-pulse'>
-                 <p className='font-bold'>Loading...</p>
-              </div>
+            <div className='flex flex-wrap gap-6 mt-4'>
+              <CarCardSkeleton/>
+              <CarCardSkeleton/>
+              <CarCardSkeleton/>
+              <CarCardSkeleton/>
+              <CarCardSkeleton/>
             </div>
             )
           }
