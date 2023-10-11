@@ -59,15 +59,32 @@ export default async function Home({ searchParams }: HomeProps) {
         <p className='text-2xl font-semibold text-slate-600 mt-4 underline decoration-[#FF7A1A] underline-offset-8 decoration-8'>Explore the world's upcoming car sharing marketplace</p>
         <div className='mt-8 text-left p-16'>
           <h3 className='font-extrabold text-2xl'>Browse by make</h3>
-         { !isDataEmpty?(
+         { isDataEmpty?(
          <div className='flex flex-wrap gap-4 justify-between w-full mt-4 home__cars-wrapper'>
           {allCars?.map((car) => (
                 <CarCard car={car} />
               ))}
           </div>
           ):(
-          <div className='flex flex-wrap gap-4 justify-between w-full mt-4 '>
-            no results
+            <div className='flex flex-wrap gap-6'>
+              <div className='flex flex-wrap gap-4 items-center p-20 justify-between h-60 w-60 rounded-xl shadow-md  mt-4 border bg-slate-300 animate-pulse'>
+                 <p className='font-bold'>Loading...</p>
+              </div>
+              <div className='flex flex-wrap gap-4 items-center p-20 justify-between h-60 w-60 rounded-xl shadow-md  mt-4 border bg-slate-300 animate-pulse'>
+                 <p className='font-bold'>Loading...</p>
+              </div>
+              <div className='flex flex-wrap gap-4 items-center p-20 justify-between h-60 w-60 rounded-xl shadow-md  mt-4 border bg-slate-300 animate-pulse'>
+                 <p className='font-bold'>Loading...</p>
+              </div>
+               <div className='flex flex-wrap gap-4 items-center p-20 justify-between h-60 w-60 rounded-xl shadow-md  mt-4 border bg-slate-300 animate-pulse'>
+                 <p className='font-bold'>Loading...</p>
+              </div>
+               <div className='flex flex-wrap gap-4 items-center p-20 justify-between h-60 w-60 rounded-xl shadow-md  mt-4 border bg-slate-300 animate-pulse'>
+                 <p className='font-bold'>Loading...</p>
+              </div>
+               <div className='flex flex-wrap gap-4 items-center p-20 justify-between h-60 w-60 rounded-xl shadow-md  mt-4 border bg-slate-300 animate-pulse'>
+                 <p className='font-bold'>Loading...</p>
+              </div>
             </div>
             )
           }
