@@ -59,7 +59,7 @@ export default async function Home({ searchParams }: HomeProps) {
         <p className='text-2xl font-semibold text-slate-600 mt-4 underline decoration-[#FF7A1A] underline-offset-8 decoration-8'>Explore the world's upcoming car sharing marketplace</p>
         <div className='mt-8 text-left p-16'>
           <h3 className='font-extrabold text-2xl'>Browse by make</h3>
-         { isDataEmpty?(
+         { !isDataEmpty?(
          <div className='flex flex-wrap gap-4 justify-between w-full mt-4 home__cars-wrapper'>
           {allCars?.map((car) => (
                 <CarCard car={car} />
