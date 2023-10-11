@@ -6,11 +6,21 @@ import Image from 'next/image'
 import {faqs} from '@/constants'
 import { useState } from 'react'
 import {AiOutlineSearch} from 'react-icons/ai'
+import { fetchCars } from "@/utils";
+import { HomeProps } from "@/types";
 
 
-export default function Home() {
-  const [faqActive,setFaqActive]=useState(false)
+export default async function Home({ searchParams }: HomeProps) {
+  const allCars = await fetchCars({
+    manufacturer: searchParams.manufacturer || "",
+    year: searchParams.year || 2022,
+    fuel: searchParams.fuel || "",
+    limit: searchParams.limit || 10,
+    model: searchParams.model || "",
+  });
+
   
+  const isDataEmpty = !Array.isArray(allCars) || allCars.length < 1 || !allCars;
   return (
     <main className="overflow-hidden scroll-smooth ">
       <div className=' h-[70vh] w-screen bg-[#f2f4f8] relative'>
@@ -49,11 +59,18 @@ export default function Home() {
         <p className='text-2xl font-semibold text-slate-600 mt-4 underline decoration-[#FF7A1A] underline-offset-8 decoration-8'>Explore the world's upcoming car sharing marketplace</p>
         <div className='mt-8 text-left p-16'>
           <h3 className='font-extrabold text-2xl'>Browse by make</h3>
-          <div className='flex flex-wrap gap-4 justify-between w-full mt-4 '>
-          {cars.map(car=>(
-            <CarCard link={car.imgUrl} name={car.carName} />
-          ))}
+         { !isDataEmpty?(
+         <div className='flex flex-wrap gap-4 justify-between w-full mt-4 home__cars-wrapper'>
+          {allCars?.map((car) => (
+                <CarCard car={car} />
+              ))}
           </div>
+          ):(
+          <div className='flex flex-wrap gap-4 justify-between w-full mt-4 '>
+            no results
+            </div>
+            )
+          }
           
         </div>
       </section>
