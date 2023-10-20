@@ -5,6 +5,7 @@ const nextConfig = {
       domains: [
         "images.unsplash.com",
         "cdn.imagin.studio"
+        'https://cars-by-api-ninjas.p.rapidapi.com'
         
       ],
     },
