@@ -9,15 +9,16 @@ import {AiOutlineSearch} from 'react-icons/ai'
 import { fetchCars } from "@/utils";
 import { HomeProps } from "@/types";
 import CarCardSkeleton from '@/components/CarCardSkeleton'
+import SearchBar from '@/components/Searchbar'
 
 
 export default async function Home({ searchParams }: HomeProps) {
   const allCars = await fetchCars({
-    manufacturer: searchParams.manufacturer || "Toyota",
+    manufacturer: searchParams.manufacturer || "",
     year: searchParams.year || 2022,
-    fuel: searchParams.fuel || "gas",
+    fuel: searchParams.fuel || "",
     limit: searchParams.limit || 3,
-    model: searchParams.model || "corolla",
+    model: searchParams.model || " ",
   });
 
   
@@ -60,6 +61,7 @@ export default async function Home({ searchParams }: HomeProps) {
         <p className='text-2xl font-semibold text-slate-600 mt-4 underline decoration-[#FF7A1A] underline-offset-8 decoration-8'>Explore the world's upcoming car sharing marketplace</p>
         <div className='mt-8 text-left p-16'>
           <h3 className='font-extrabold text-2xl'>Browse by make</h3>
+          <SearchBar/>
          { !isDataEmpty?(
          <div className='flex flex-wrap gap-4 justify-between w-full mt-4 home__cars-wrapper'>
           {allCars?.map((car) => (
