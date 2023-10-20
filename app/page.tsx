@@ -13,11 +13,11 @@ import CarCardSkeleton from '@/components/CarCardSkeleton'
 
 export default async function Home({ searchParams }: HomeProps) {
   const allCars = await fetchCars({
-    manufacturer: searchParams.manufacturer || "",
+    manufacturer: searchParams.manufacturer || "Toyota",
     year: searchParams.year || 2022,
-    fuel: searchParams.fuel || "",
-    limit: searchParams.limit || 10,
-    model: searchParams.model || "",
+    fuel: searchParams.fuel || "gas",
+    limit: searchParams.limit || 3,
+    model: searchParams.model || "corolla",
   });
 
   
