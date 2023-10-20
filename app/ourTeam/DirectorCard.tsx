@@ -9,7 +9,7 @@ const DirectorCard = ({directorName,department}:DirectorProps) => {
     <div>
         <h3 className='uppercase font-extrabold text-lg'>{directorName}</h3>
         <p className='mt-4 font-semibold'>{department}</p>
-        <p className='mt-6 text-[#1b57fb]'>Read bio</p>
+        <p className='mt-6 text-[#1b57fb] cursor-pointer'>Read bio</p>
     </div>
   )
 }
