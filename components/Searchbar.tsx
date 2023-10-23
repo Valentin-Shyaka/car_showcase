@@ -59,7 +59,7 @@ const SearchBar = () => {
   };
 
   return (
-    <form className='searchbar' onSubmit={handleSearch}>
+    <form className='searchbar mt-6' onSubmit={handleSearch}>
       <div className='searchbar__item'>
         <SearchManufacturer
           manufacturer={manufacturer}
