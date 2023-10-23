@@ -1,4 +1,5 @@
 import React from 'react'
+import Form from './Form'
 
 const page = () => {
   return (
@@ -15,6 +16,8 @@ const page = () => {
               </div>
         </div>
         <div className=' p-8 bg-[#f2f4f8]'>
+          <h1 className='text-4xl font-extrabold font-serif'>Drives near your location</h1>
+          <Form/>
 
         </div>
     </div>
