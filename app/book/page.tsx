@@ -17,7 +17,7 @@ const page = () => {
         </div>
         <div className=' p-8 bg-[#f2f4f8]'>
           <h1 className='text-4xl font-extrabold font-serif'>Drives near your location</h1>
-          <Form/>
+          
 
         </div>
     </div>
