@@ -200,7 +200,7 @@ export default function Form() {
 
             <div className="sm:col-span-2">
               <label htmlFor="postal-code" className="block text-sm font-medium leading-6 text-gray-900">
-                ZIP / Postal code
+                ZIP /  Postal code
               </label>
               <div className="mt-2">
                 <input
