@@ -1,13 +1,13 @@
 'use client'
 import CarDetailsCard from '@/components/CarDetailsCard'
 import CustomButton from '@/components/CustomButton'
-import React from 'react'
+import React, { useState } from 'react'
 import { availableCars } from '@/constants'
 
 
 const LandingPage = () => {
  
-  
+ 
   const filters=[
     {
       name:'Sort by'

@@ -1,11 +1,11 @@
 'use client'
-import React from 'react'
+import React, { useState } from 'react'
 import  CIcon  from '@coreui/icons-react';
-import { cilList, cilShieldAlt } from '@coreui/icons';
+import { cilList, cilShieldAlt, } from '@coreui/icons';
 import {BiTrip} from 'react-icons/bi'
 import {BsDot} from 'react-icons/bs'
-import {AiOutlineTag} from 'react-icons/ai'
-import {AiOutlineHeart} from 'react-icons/ai'
+import {AiOutlineTag,AiOutlineHeart,AiFillHeart} from 'react-icons/ai'
+
 interface CarDetailsProps{
   imageurl:string;
   carName:string;
@@ -16,6 +16,7 @@ interface CarDetailsProps{
 
 
 const CarDetailsCard = ({imageurl,carName,location,miles,price}:CarDetailsProps) => {
+  const [liked,setLiked]= useState(false)
   return (
     <div className='h-36  rounded-xl border bg-white flex mb-4'>
         <div className='w-[30%]'>
@@ -40,7 +41,11 @@ const CarDetailsCard = ({imageurl,carName,location,miles,price}:CarDetailsProps)
 
 
             </div>
-            <AiOutlineHeart className='absolute top-5 left-96 text-3xl'/>
+            <div className='absolute top-5 left-96' onClick={()=>setLiked(!liked)}>
+            {liked?<AiFillHeart className=' text-3xl text-red-500' />:
+            <AiOutlineHeart className=' text-3xl' />
+            }   
+            </div>
 
             <div className='absolute left-80 flex items-center gap-4'>
               <p className='line-through text-xl text-slate-700'>$84</p>
