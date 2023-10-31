@@ -15,8 +15,8 @@ const page = () => {
                 <p className='mt-4 text-white text-lg font-bold'>Get to know the people behind the wheel of the world's largest car sharing marketplace</p>
               </div>
         </div>
-        <div className=' p-8 bg-[#f2f4f8]'>
-          <div className='bg-white p-20 rounded-xl shadow-md'>
+        <div className=' p-8 bg-[#f2f4f8] w-full h-[260vh]'>
+          <div className='absolute top-96 w-[96%] bg-white p-20 rounded-xl shadow-md'>
           <Form/>
           </div>
 
