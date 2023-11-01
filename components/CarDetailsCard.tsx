@@ -14,7 +14,6 @@ interface CarDetailsProps{
   price:number;
 }
 
-
 const CarDetailsCard = ({imageurl,carName,location,miles,price}:CarDetailsProps) => {
   const [liked,setLiked]= useState(false)
   return (

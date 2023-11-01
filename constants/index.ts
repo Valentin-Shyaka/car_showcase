@@ -245,4 +245,11 @@ export const fuels = [
   },
 ];
 
+export const likedCar=[
+  {
+    imageurl:"",
+    carName:""
+  }
+]
+
 

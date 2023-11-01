@@ -21,7 +21,7 @@ const TeamPage = () => {
         </div>
         <div className='p-20'>
             <h3 className='text-4xl font-extrabold font-serif'>Leadership</h3>
-            <div className='mt-6 w-full flex flex-wrap justify-between gap-6 '>
+            <div className='mt-6 w-full flex flex-wrap justify-center gap-6 '>
               {teamMembers.map(member =>(
                 <TeamMemberCard profileUrl={member.profileUrl} memberName={member.memberName} position={member.position}/>
               ))}
@@ -30,7 +30,7 @@ const TeamPage = () => {
         </div>
         <div className='p-36'>
             <h3 className='text-4xl font-extrabold font-serif'>Board of Directors</h3>
-            <div className='mt-6 w-full flex flex-wrap justify-between gap-8 p-10'>
+            <div className='mt-6 w-full flex flex-wrap justify-center gap-8 p-10'>
               {directors.map(director =>(
                 <DirectorCard directorName={director.directorName} department={director.department} />
               ))}
