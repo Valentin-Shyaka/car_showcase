@@ -3,6 +3,7 @@ import CarDetailsCard from '@/components/CarDetailsCard'
 import CustomButton from '@/components/CustomButton'
 import React, { useState } from 'react'
 import { availableCars } from '@/constants'
+import MainLayout from '@/layouts/MainLayout'
 
 
 const LandingPage = () => {
@@ -20,6 +21,7 @@ const LandingPage = () => {
 
   ]
   return (
+    <MainLayout>
     <div className=' relative p-10 bg-[#f2f4f8]'> 
        <div className='p-4 bg-white flex w-[30%] border rounded-lg gap-8  top-0 '>
           {filters.map(filter=>(
@@ -43,6 +45,8 @@ const LandingPage = () => {
         </div>
        </div>
     </div>
+    </MainLayout>
+    
   )
 }
 

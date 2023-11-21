@@ -4,9 +4,11 @@ import React from 'react'
 import DirectorCard from './DirectorCard'
 import { teamMembers } from '@/constants'
 import { directors } from '@/constants'
+import MainLayout from '@/layouts/MainLayout'
 
 const TeamPage = () => {
   return (
+    <MainLayout>
     <div className='items-center bg-[#f2f4f8]'>
         <div className='relative h-[40vh] w-full '>
             <img
@@ -48,6 +50,7 @@ const TeamPage = () => {
 
         </div>
     </div>
+    </MainLayout>
   )
 }
 

@@ -10,6 +10,7 @@ import { fetchCars } from "@/utils";
 import { HomeProps } from "@/types";
 import CarCardSkeleton from '@/components/CarCardSkeleton'
 import SearchBar from '@/components/Searchbar'
+import MainLayout from '@/layouts/MainLayout'
 
 
 export default async function Home({ searchParams }: HomeProps) {
@@ -46,6 +47,7 @@ export default async function Home({ searchParams }: HomeProps) {
   
   const isDataEmpty = !Array.isArray(allCars) || allCars.length < 1 || !allCars;
   return (
+    <MainLayout>
     <main className="overflow-hidden scroll-smooth ">
       <div className=' h-[70vh] w-screen bg-[#f2f4f8] relative'>
         <img
@@ -128,5 +130,6 @@ export default async function Home({ searchParams }: HomeProps) {
       </section>
      
     </main>
+    </MainLayout>
   )
 }

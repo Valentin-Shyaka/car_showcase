@@ -1,8 +1,10 @@
 import React from 'react'
 import Form from './Form'
+import MainLayout from '@/layouts/MainLayout'
 
 const page = () => {
   return (
+    <MainLayout>
     <div className=' bg-[#f2f4f8]'>
       <div className='relative h-[40vh] w-full '>
             <img
@@ -22,6 +24,7 @@ const page = () => {
 
         </div>
     </div>
+    </MainLayout>
   )
 }
 
