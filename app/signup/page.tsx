@@ -3,7 +3,7 @@ import CustomButton from '@/components/CustomButton'
 
 const page = () => {
   return (
-    <section className='flex w-full h-screen items-center justify-center bg-slate-300'>
+    <section className='flex w-full h-screen items-center justify-end p-6 bg-slate-300'>
     <div className=' h-fit w-[40vw] flex flex-col gap-3 justify-center shadow-lg rounded-md p-6 bg-white'>
                   <h3 className="text-3xl font-extrabold ">SIGN  UP</h3>
                   <div className="mt-4 flex flex-col gap-4">
