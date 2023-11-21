@@ -3,8 +3,9 @@ import CustomButton from '@/components/CustomButton'
 
 const page = () => {
   return (
-    <section className='flex w-full h-screen items-center justify-end p-6 bg-slate-300'>
-    <div className=' h-fit w-[40vw] flex flex-col gap-3 justify-center shadow-lg rounded-md p-6 bg-white'>
+    <section className='signup_background flex w-full h-screen items-center justify-center p-6 bg-slate-300'>
+     
+    <div className=' h-fit w-[40vw] flex flex-col gap-3 justify-center z-10 shadow-lg rounded-md p-6 bg-white'>
                   <h3 className="text-3xl font-extrabold ">SIGN  UP</h3>
                   <div className="mt-4 flex flex-col gap-4">
                     <div>
@@ -29,7 +30,7 @@ const page = () => {
                         <p className="text-slate-500 text-sm">We'll text you a code to confirm your account</p>
                     </div>
                    
-                    <CustomButton btnType="submit" text="Login" active/>
+                    <CustomButton btnType="submit" text="Create account" active/>
                   </div>
                   <span className="text-center text-slate-500">or</span>
                   <div className="flex flex-col gap-2">

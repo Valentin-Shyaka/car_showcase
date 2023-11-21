@@ -26,6 +26,16 @@
 .footer__links {
   @apply flex-1 w-full flex md:justify-end flex-wrap max-md:mt-10 gap-20;
 }
+.bubble {
+  border-radius: 302px;
+  background: linear-gradient(180deg, #ff7a1a 0%, rgba(10, 27, 48, 0.63) 100%);
+}
+.signup_background{
+  background-image: url('https://images.unsplash.com/photo-1608341089966-92c09e62214f?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  object-fit:contain;
+  opacity: 0.9;
+
+}
 
 .footer__link {
   @apply flex flex-col gap-6 text-base min-w-[170px];
