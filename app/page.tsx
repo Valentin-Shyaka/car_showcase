@@ -13,6 +13,28 @@ import SearchBar from '@/components/Searchbar'
 
 
 export default async function Home({ searchParams }: HomeProps) {
+  
+  // const cars= await fetch('https://localhost:3500/users', {
+  //   method: 'GET',
+  //   headers: {
+  //     'Content-Type': 'application/json', // Set the appropriate content type if necessary
+  //     // You can add custom headers here if needed
+  //   },
+  // })
+  //   .then(response => {
+  //     if (!response.ok) {
+  //       throw new Error('Network response was not ok');
+  //     }
+  //     return response.json(); // Parse the response as JSON
+  //   })
+  //   .then(data => {
+  //     // Handle the JSON data here
+  //     console.log(data);
+  //   })
+  //   .catch(error => {
+  //     console.error('Fetch error:', error);
+  //   });
+
   const allCars = await fetchCars({
     manufacturer: searchParams.manufacturer || "",
     year: searchParams.year || 2022,
