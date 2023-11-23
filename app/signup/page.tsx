@@ -1,10 +1,13 @@
+"use client"
 import React from 'react'
 import CustomButton from '@/components/CustomButton'
+import { StyledBubbles } from '@/components/styledBubbles'
 
 const page = () => {
+ 
   return (
     <section className='signup_background flex w-full h-screen items-center justify-center p-6 bg-slate-300'>
-      <div className='bubble left-10 w-20 h-20 rounded-full top-20 bg-red-400'></div>
+      <StyledBubbles />
       <div className='bubble left-96 w-20 h-20 rounded-full top-40 bg-blue-400'></div>
       <div className='bubble left-72 w-20 h-20 rounded-full top-96 bg-black-500'></div>
       <div className='bubble right-36 w-20 h-20 rounded-full bottom-20 bg-orange-600 '></div>
