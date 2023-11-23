@@ -4,6 +4,12 @@ import CustomButton from '@/components/CustomButton'
 const page = () => {
   return (
     <section className='signup_background flex w-full h-screen items-center justify-center p-6 bg-slate-300'>
+      <div className='bubble left-10 w-20 h-20 rounded-full top-20 bg-red-400'></div>
+      <div className='bubble left-96 w-20 h-20 rounded-full top-40 bg-blue-400'></div>
+      <div className='bubble left-72 w-20 h-20 rounded-full top-96 bg-black-500'></div>
+      <div className='bubble right-36 w-20 h-20 rounded-full bottom-20 bg-orange-600 '></div>
+      <div className='bubble right-96 w-20 h-20 rounded-full bottom-52 bg-green-400'></div>
+      <div className='bubble right-72 w-20 h-20 rounded-full bottom-96 bg-yellow-400'></div>
      
     <div className=' h-fit w-[40vw] flex flex-col gap-3 justify-center z-10 shadow-lg rounded-md p-6 bg-white'>
                   <h3 className="text-3xl font-extrabold ">SIGN  UP</h3>

@@ -27,8 +27,15 @@
   @apply flex-1 w-full flex md:justify-end flex-wrap max-md:mt-10 gap-20;
 }
 .bubble {
-  border-radius: 302px;
-  background: linear-gradient(180deg, #ff7a1a 0%, rgba(10, 27, 48, 0.63) 100%);
+  
+  position: absolute;
+
+  
+
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(8.2px);
+-webkit-backdrop-filter: blur(8.2px);
+border: 1px solid rgba(255, 255, 255, 0.3);
 }
 .signup_background{
   background-image: url('https://images.unsplash.com/photo-1608341089966-92c09e62214f?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
