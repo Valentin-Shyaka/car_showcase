@@ -13,5 +13,6 @@ export const StyledBubbles = ({styles}:BubbleProps) => (
       }}
       transition={{ ease: "easeOut", duration: 4, times:[0, 0.2, 1],delay:  0.3, }}
       className={styles}
+      layout
     />
   )
