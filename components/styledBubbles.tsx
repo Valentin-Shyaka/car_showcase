@@ -1,6 +1,10 @@
 import { motion } from "framer-motion"
 
-export const StyledBubbles = () => (
+interface BubbleProps{
+  styles: string
+}
+
+export const StyledBubbles = ({styles}:BubbleProps) => (
     <motion.div
       animate={{
         scale: [1, 2, 2, 1, 1],
@@ -8,6 +12,6 @@ export const StyledBubbles = () => (
         borderRadius: ["20%", "20%", "50%", "50%", "20%"],
       }}
       transition={{ ease: "easeOut", duration: 4, times:[0, 0.2, 1],delay:  0.3, }}
-      className='bubble left-20 w-20 h-20 rounded-full top-20 bg-red-400'
+      className={styles}
     />
   )
