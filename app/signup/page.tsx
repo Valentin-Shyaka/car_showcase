@@ -3,6 +3,7 @@ import React from 'react'
 import CustomButton from '@/components/CustomButton'
 import { StyledBubbles } from '@/components/styledBubbles'
 
+
 const page = () => {
  
   return (
