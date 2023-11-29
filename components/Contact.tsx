@@ -30,7 +30,7 @@ const Contact = () => {
 
         <div className="contact__container container grid ">
             <div className="contact__content">
-                <h3 className="contact__title">Talk to me</h3>
+                <h3 className="contact__title">Contact us</h3>
 
                 <div className="contact__info">
                     
