@@ -50,7 +50,7 @@ describe('Navigation', () => {
     cy.url().should('include', '/contact')
  
     // The new page should contain an h1 with "About page"
-    cy.get('h3').contains('Contact us')
+    cy.get('h3').contains('Contact usmac')
   })
   
 })
